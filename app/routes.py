@@ -14,7 +14,7 @@ def index():
     return render_template('index.html', **context)
 
 
-@app.route('/register')
-def register():
-    title = 'REGISTER'
-    return render_template('register.html', title=title)
+@app.route('/top_5')
+def top_5():
+    title = 'Top Five'
+    return render_template('top_5.html', title=title)
