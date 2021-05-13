@@ -1,9 +1,104 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hello visitors!</h1>
 
-<h4>This is my first Flask project :)</h4>
-<h5>Click above to see my top 5 music artists.</h5>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Flask Project</title>
+</head>
+
+<body class="bg-secondary">
+    <div class="container">
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Column for left 2/3 of page -->
+            <div class="col-12 col-md-8">
+                <!-- Top Card -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Very Cool Post 1</h4>
+                        <h6 class="card-subtitle my-4"> Very intriguing text about something awesome.</h6>
+                        <p class="card-text"><small class="text">Some more text.</small></p>
+                    </div>
+                    <img src="https://via.placeholder.com/1000x200?text=Image" class="card-img-bottom"
+                        alt="placeholder">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ipsam fugit
+                        harum, iure autem totam ratione, id commodi repellendus ut maxime in soluta repellat? Aperiam
+                        repellat debitis aut nulla repellendus.</p>
+                </div>
+
+                <!-- Bottom Card -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Another Great Post</h4>
+                        <h6 class="card-subtitle my-4"> More cool descriptions about something neat.</h6>
+                        <p class="card-text"><small class="text">More text.</small></p>
+                    </div>
+                    <img src="https://via.placeholder.com/1000x200?text=Image" class="card-img-bottom"
+                        alt="placeholder">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ipsam fugit
+                        harum, iure autem totam ratione, id commodi repellendus ut maxime in soluta repellat? Aperiam
+                        repellat debitis aut nulla repellendus.</p>
+                </div>
+
+
+            </div>
+
+            <!-- Column for right 1/3 of page -->
+            <div class="col-12 col-md-4">
+
+                <!-- right card w 3 img -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Top 5 Music Artists</h4>
+                    </div>
+                    <img src="https://pbs.twimg.com/profile_images/976522723445936128/RDTP0iCK.jpg" alt="PatD"
+                        style="width:100%">
+                    <div class="w3-container">
+                        <p>Panic! at the Disco</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/I_Brought_You_My_Bullets%2C_You_Brought_Me_Your_Love_cover.jpg/220px-I_Brought_You_My_Bullets%2C_You_Brought_Me_Your_Love_cover.jpg"
+                        alt="MCR" style="width: 100%">
+                    <div class="w3-container">
+                        <p>My Checmical Romance</p>
+                    </div>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71J%2BQkOmAKL._SY355_.jpg" alt="FoB"
+                        style="width:100%">
+                    <div class="w3-container">
+                        <p>Fall Out Boy</p>
+                    </div>
+
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81kPjIw1k2L._SL1500_.jpg" alt="PtV"
+                        style="width:100%">
+                    <div class="w3-container">
+                        <p>Pierce the Veil</p>
+                    </div>
+
+                    <img src="https://f4.bcbits.com/img/a4216569109_10.jpg" alt="Rav" style="width:100%">
+                    <div class="w3-container">
+                        <p>Rav</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
 
 {% endblock content %}

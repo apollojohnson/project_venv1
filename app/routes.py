@@ -1,20 +1,25 @@
+from app.forms import LoginForm
 from app import app
-from flask import render_template
+from flask import render_template, request, redirect, url_for, flash
+
+from flask import Flask, render_template, redirect
+from .forms import LoginForm
+ 
+app = Flask(__name__)
+app.config["SECRET_KEY"] = "12345678"
 
 @app.route('/')
 def index():
-    context = {
-       'title': 'HOME',
-       'items': ['apple', 'banana', 'orange', 'pear', 'watermelon', 'grapefruit', 'grapes'],
-       'user': {
-            'id': 2,
-            'username': 'Brian'
-        }  
-    }
-    return render_template('index.html', **context)
+    return render_template('index.html')
 
 
-@app.route('/top_5')
-def top_5():
-    title = 'Top Five'
-    return render_template('top_5.html', title=title)
+@app.route('/signup')
+def signup():
+    form = LoginForm()
+    title = 'Register'
+    return render_template('signup.html', title=title, form=form)
+
+@app.route("/phonebook")
+def phonebook():
+    title = "Phonebook"
+    return render_template("phonebook.html", title=title)
